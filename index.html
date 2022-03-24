@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title> &#128337 clock</title>
+  <script defer src="clock.js"></script>
+  <script>
+    function reload() {
+      setInterval(drawTimeInfo, 1000)
+    }
+  </script>
+</head>
+
+<body onload="reload()">
+  <div id="container">
+    <p>time is running... enjoy it</p>
+    <svg width="300" height="300">
+      <circle id="circle" 
+        cx="150" cy="150" r="100" stroke="#4a235a"
+        stroke-width="5" opacity="0.5" fill="#f4ecf7"
+      /> 
+      <line id="second-hand" x1="150" y1="150" stroke="#B75D69"></line>
+      <line id="minute-hand" x1="150" y1="150" stroke="black" stroke-width="2" stroke-linecap="round" ></line>
+      <line id="hour-hand" x1="150" y1="150" stroke="black" stroke-width="4" stroke-linecap="round"></line>
+      <circle cx="150" cy="150" r="3.3" stroke="#424949" fill="#797d7f"/>
+    </svg>
+    <p id="date-format"></p>
+  </div>
+</body>
+</html>

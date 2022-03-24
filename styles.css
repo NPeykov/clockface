@@ -1,0 +1,18 @@
+body {
+  background-color: #d2b4de;
+}
+
+p {
+  text-align: center;
+  font-family: cursive;
+  color:  #2c003d;
+  font-size: 30px;
+}
+
+#container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
