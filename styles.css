@@ -9,6 +9,11 @@ p {
   font-size: 30px;
 }
 
+svg {
+  display: block;
+  margin: auto;
+}
+
 #container {
   position: absolute;
   left: 50%;
