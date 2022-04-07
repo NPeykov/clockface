@@ -1,6 +1,6 @@
-const s_hand_long = 70
-const m_hand_long = 55
-const h_hand_long = 35
+const s_hand_long = 101 
+const m_hand_long = 80
+const h_hand_long = 50
 
 const secondHand = document.getElementById("second-hand")
 const minuteHand = document.getElementById("minute-hand")
@@ -65,13 +65,13 @@ function drawHourVectors() {
     var el = document.createElementNS('http://www.w3.org/2000/svg', 'line');
       el.setAttribute('x1', '150');
       el.setAttribute('x2', '150');
-      el.setAttribute('y1', '240');
+      el.setAttribute('y1', '285');
     if(i % 3 == 0) {
-      el.setAttribute('y2', '225');
+      el.setAttribute('y2', '260');
       el.setAttribute('transform', 'rotate(' + (i*360/12) + ' 150 150)');
       el.setAttribute('style', 'stroke: #17202a; stroke-width: 3.5; stroke-linecap: round');
     } else {
-      el.setAttribute('y2', '228');
+      el.setAttribute('y2', '262');
       el.setAttribute('transform', 'rotate(' + (i*360/12) + ' 150 150)');
       el.setAttribute('style', 'stroke: #4a235a; stroke-width: 2; stroke-linecap: round');
     }
@@ -83,9 +83,9 @@ function drawNonHourVectors() {
   for(var i = 1; i <= 60; i++) {
     var el = document.createElementNS('http://www.w3.org/2000/svg', 'line');
     el.setAttribute('x1', '150');
-    el.setAttribute('y1', '240');
+    el.setAttribute('y1', '285');
     el.setAttribute('x2', '150');
-    el.setAttribute('y2', '230');
+    el.setAttribute('y2', '270');
     el.setAttribute('transform', 'rotate(' + (i*360/60) + ' 150 150)');
     el.setAttribute('style', 'stroke: #4a326c; stroke-width: 1');
     document.querySelector('svg').appendChild(el);
