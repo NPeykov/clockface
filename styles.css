@@ -1,11 +1,14 @@
 body {
-  background-color: #d2b4de;
+  /*background-color: #d2b4de;*/
+  /*background-color: #e8d3f0;*/
+  background-color: #333;
 }
 
 p {
   text-align: center;
   font-family: cursive;
-  color:  #2c003d;
+  /*color:  #2c003d;*/
+  color: #bda4d4 ;
   font-size: 30px;
 }
 

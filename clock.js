@@ -73,7 +73,7 @@ function drawHourVectors() {
     } else {
       el.setAttribute('y2', '262');
       el.setAttribute('transform', 'rotate(' + (i*360/12) + ' 150 150)');
-      el.setAttribute('style', 'stroke: #4a235a; stroke-width: 2; stroke-linecap: round');
+      el.setAttribute('style', 'stroke: #17202a; stroke-width: 2; stroke-linecap: round');
     }
     document.querySelector('svg').appendChild(el);
   }
@@ -87,7 +87,7 @@ function drawNonHourVectors() {
     el.setAttribute('x2', '150');
     el.setAttribute('y2', '270');
     el.setAttribute('transform', 'rotate(' + (i*360/60) + ' 150 150)');
-    el.setAttribute('style', 'stroke: #4a326c; stroke-width: 1');
+    el.setAttribute('style', 'stroke: #17202a; stroke-width: 1');
     document.querySelector('svg').appendChild(el);
   }
 }
