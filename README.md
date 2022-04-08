@@ -25,6 +25,6 @@ Where
     - X: blue wave
     - Y: purple wave
 
-Note how each period coincide with it's range
+Note how each period coincide with its range
 - Minute & Second - 60 units 
 - Hour - 12 units _(though in one day are 24 units, the hand repeats every 12 units)_
